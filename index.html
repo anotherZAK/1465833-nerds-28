@@ -1,12 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
-</html>
+<body class="page-body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <section class="header-navigation">
+        <h2 class="header-navigation__title visually-hidden">Навигационное меню</h2>
+        <a href="" class="header-navigation__logo"><img src="img/svg/nerds-logo.svg" width="160" height="65"
+            alt="Логотип дизайн-студии Нёрдс"></a>
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item"><a href="">Студия</a></li>
+          <li class="header-navigation__item"><a href="">Клиенты</a></li>
+          <li class="header-navigation__item"><a href="catalog.html">Магазин</a></li>
+          <li class="header-navigation__item"><a href="">Контакты</a></li>
+        </ul>
+        <a href="" class="header-navigation__basket">Корзина</a>
+      </section>
+      <section class="header-advt">
+        <h2 class="header-advt__title visually-hidden">Рекламное меню</h2>
+        <div class="header-advt__slider">
+          <ul class="header-advt__list">
+            <li class="header-advt__item advt-slide">
+              <h2 class="advt-slide__title">Долго, дорого, скрупулезно.</h2>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+              <a href="" class="btn">Узнать больше</a>
+            </li>
+            <li class="slider-advt__item advt-slide">
+              <h2 class="advt-slide__title">Любим математику как никто другой</h2>
+              <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
+              <a href="" class="btn">Узнать больше</a>
+            </li>
+            <li class="slider-advt__item advt-slide">
+              <h2 class="advt-slide__title">Только ночь, только хардкор.</h2>
+              <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+              <a href="" class="btn">Узнать больше</a>
+            </li>
+          </ul>
+          <div class="header-advt__slider-controls advt-conrols">
+            <button class="advt-controls__button advt-controls__button-current"></button>
+            <button class="advt-controls__button"></button>
+            <button class="advt-controls__button"></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="index-main">
+    <div class="main-conteiner">
+      <section class="promo">
+        <h2 class="promo__title visually-hidden">Мы разрабатываем</h2>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <img class="promo__item-img" src="img/png/illustration-web.png" width="300" height="146"
+              alt="Иллюстрация разработки веб-сайтов">
+            <h3 class="promo__item-title">Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="" class="btn">Заказать</a>
+          </li>
+          <li class="promo__item">
+            <img class="promo__item-img" src="img/png/illustration-app.png" width="300" height="146"
+              alt="Иллюстрация разработки приложений">
+            <h3 class="promo__item-title">Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="" class="btn btn--green">Заказать</a>
+          </li>
+          <li class="promo__item-img">
+            <img class="item-promo__img" src="img/png/illustration-presentations.png" width="300" height="146"
+              alt="Иллюстрация разработки презентаций">
+            <h3 class="promo__item-title">Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="" class="btn btn--yellow">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <h1 class="about-us__title visually-hidden">Дизайн-студия Нёрдс</h1>
+        <div class="about-us-info">
+          <p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не
+            покладая рук, как роботы.</p>
+          <p class="about-us-order">Выполняем заказы на разработку:</p>
+          <ul class="about-us-order__list">
+            <li class="about-us-order__item">Веб-сайтов любой сложности</li>
+            <li class="about-us-order__item">Мобильных приложений для iOS и Android</li>
+            <li class="about-us-order__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-us-features">
+          <img class="about-us-logo" src="img/png/main-logo.png" width="360" height="208">
+          <p class="about-us-features__title">С 2004 года любим точность во всем:</p>
+          <ul class="about-us-features__list">
+            <li class="about-us-features__item">
+              <h2>Уровень самоотдачи</h2>
+              <p>146<sup>%</sup></p>
+            </li>
+            <li class="about-us-features__item">
+              <h2>Соблюдение сроков</h2>
+              <p>100<sup>%</sup></p>
+            </li>
+            <li class="about-us-features__item">
+              <h2>Минимальная предоплата</h2>
+              <p>50<sup>%</sup></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="our-projects">
+        <h2 class="our-projects__title visually-hidden">Наши работы</h2>
+        <ul class="our-projects__list">
+          <li class="our-projects__item"><img class="our-projects__img" src="img/svg/logo-htmlacademy.svg" width="199"
+              height="68" alt="Логотип HTML-academy"></li>
+          <li class="our-projects__item"><img class="our-projects__img" src="img/svg/logo-borodinski.svg" width="209"
+              height="90" alt="Логотип HTML-academy"></li>
+          <li class="our-projects__item"><img class="our-projects__img" src="img/svg/logo-pink.svg" width="185"
+              height="52" alt="Логотип HTML-academy"></li>
+          <li class="our-projects__item"><img class="our-projects__img" src="img/svg/logo-mishka.svg" width="173"
+              height="84" alt="Логотип HTML-academy"></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <section class="footer-map">
+      <h2 class="footer-map__title visually-hidden">Наш адрес</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="100%" height="449" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <div class="footer-contacts">
+        <h2 class="footer-contacts__title">Nёrds disign studio</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p><a href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
+        <a href="" class="btn">Напишите нам</a>
+      </div>
+    </section>
+    <section class="footer-friends">
+      <h2 class="footer-friends__title visually-hidden">Социальные сети - выгодные предложения!</h2>
+      <ul class="social-list">
+        <li><a href="" class="social-button vkontakte"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li><a href="" class="social-button facebook"><span class="visually-hidden">Фэйсбук</span></a></li>
+        <li><a href="" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a></li>
+      </ul>
+      <div class="footer-profit">
+        <h3 class="footer-profit__title">Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+</body>
