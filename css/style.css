@@ -161,6 +161,7 @@ img {
 
 .btn--submenu {
   margin: 0 auto;
+  margin-bottom: 44px;
   padding-right: 72px;
   padding-left: 72px;
   width: 200px;
@@ -812,7 +813,7 @@ img {
   left: 1px;
   bottom: 4px;
   width: 360px;
-  height: 231px;
+  max-height: 450px;
   background-color: var(--basic-background);
 }
 
