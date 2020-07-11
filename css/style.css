@@ -21,6 +21,7 @@
   --pagination-border: hsl(0, 0%, 86%);
   --modal-shadow: rgba(0, 0, 0, 0.4);
   --toggle-grey: hsl(0, 0%, 67%);
+  --range-scale: hsl(202, 11%, 86%);
   --slide-btn: hsl(0, 0%, 76%);
   --shadow-toggle: rgba(0, 0, 0, 0.15);
   --social-icon: hsl(0, 0%, 88%);
@@ -38,6 +39,9 @@ body {
   min-width: 1200px;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark);
 }
 
 a {
@@ -55,6 +59,7 @@ img {
 
 .page-body {
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
 }
@@ -66,6 +71,8 @@ img {
 .container {
   margin: 0 auto;
   width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .btn {
@@ -285,6 +292,7 @@ img {
 .advt-slide__title {
   padding-top: 79px;
   font-weight: 500;
+  color: var(--basic-black);
 }
 
 .advt-slide p {
@@ -342,7 +350,7 @@ img {
 
 .our-projects {
   position: relative;
-  margin-bottom: 123px;
+  margin-bottom: 119px;
 }
 
 .promo {
@@ -382,7 +390,7 @@ img {
 }
 
 .product__img {
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .product__title {
@@ -391,17 +399,12 @@ img {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .product p {
   max-width: 260px;
   margin-bottom: 33px;
-}
-
-.general-text {
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--basic-dark);
 }
 
 .about-us-info {
@@ -415,6 +418,7 @@ img {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  color: var(--basic-black);
 }
 
 .about-us-info p {
@@ -435,7 +439,18 @@ img {
 }
 
 .about-us__item {
+  position: relative;
   margin-bottom: 25px;
+}
+
+.about-us__item::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  top: 11px;
+  left: -35px;
+  background-color: var(--btn);
 }
 
 .about-us-features {
@@ -443,7 +458,7 @@ img {
 }
 
 .about-us-logo {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .about-us-features__title {
@@ -479,6 +494,7 @@ img {
   font-size: 45px;
   font-weight: bold;
   line-height: 64px;
+  color: var(--basic-black);
 }
 
 .about-us-features__item sup {
@@ -566,6 +582,7 @@ img {
   margin-top: 67px;
   margin-left: 209px;
   max-width: 750px;
+  color: var(--basic-black);
 }
 
 .grid-container,
@@ -585,6 +602,7 @@ img {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .range-filter {
@@ -671,7 +689,6 @@ img {
 
 .filter-item ul {
   padding: 0;
-  padding-left: 34px;
 }
 
 .filter-item-radio {
@@ -684,17 +701,22 @@ img {
 
 .filter-option {
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 
 .filter-option span {
   line-height: 19px;
 }
 
+.filter-radio,
+.filter-checkbox {
+  padding-left: 34px;
+}
+
 .filter-checkbox input+span::after {
   position: absolute;
   content: "";
-  left: -35px;
+  left: 0;
   top: -3px;
   width: 23px;
   height: 23px;
@@ -722,7 +744,7 @@ img {
 .filter-radio input+span::after {
   position: absolute;
   content: "";
-  left: -35px;
+  left: 0;
   top: -3px;
   width: 25px;
   height: 25px;
@@ -797,8 +819,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 38px;
-  grid-row-gap: 27px;
-  margin-bottom: 50px;
+  grid-row-gap: 24px;
+  margin-bottom: 47px;
   padding: 0;
 }
 
@@ -807,7 +829,7 @@ img {
   text-align: center;
 }
 
-.catalog__item-submenu {
+.pattern-submenu {
   position: absolute;
   display: none;
   left: 1px;
@@ -817,16 +839,26 @@ img {
   background-color: var(--basic-background);
 }
 
-.catalog__item-submenu h3 {
+.pattern-link {
   margin-top: 27px;
   margin-bottom: 11px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
-.catalog__item-submenu p {
+.pattern-link:hover {
+  color: var(--btn);
+}
+
+.pattern-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.pattern-submenu p {
   margin: 0 auto;
   margin-bottom: 33px;
   width: 230px;
@@ -835,19 +867,19 @@ img {
   color: var(--footer-grey);
 }
 
-.catalog__item:hover .catalog__item-img {
+.catalog__item:hover .pattern-img {
   box-shadow: 0px 6px 15px var(--catalog-shadow);
 }
 
-.catalog__item:hover .catalog__item-head {
+.catalog__item:hover .pattern-head {
   opacity: 1;
 }
 
-.catalog__item:hover .catalog__item-submenu {
+.catalog__item:hover .pattern-submenu {
   display: block;
 }
 
-.catalog__item-head {
+.pattern-head {
   position: relative;
   width: 360px;
   height: 40px;
@@ -857,9 +889,9 @@ img {
   border-top-left-radius: 5px;
 }
 
-.catalog__item-circles,
-.catalog__item-circles::before,
-.catalog__item-circles::after {
+.pattern-circles,
+.pattern-circles::before,
+.pattern-circles::after {
   position: absolute;
   content: "";
   left: 39px;
@@ -869,19 +901,19 @@ img {
   border-radius: 50%;
 }
 
-.catalog__item-circles {
+.pattern-circles {
   top: 14px;
 }
 
-.catalog__item-circles::after {
+.pattern-circles::after {
   left: 23px;
 }
 
-.catalog__item-circles::before {
+.pattern-circles::before {
   left: -23px;
 }
 
-.catalog__item-img {
+.pattern-img {
   border: 1px solid var(--border-color);
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -941,6 +973,7 @@ img {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .footer-map iframe {
@@ -969,6 +1002,7 @@ img {
 
 .footer-friends {
   margin-top: 64px;
+  margin-bottom: 60px;
 }
 
 .footer-friends .container {
@@ -983,6 +1017,7 @@ img {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
+  color: var(--basic-black);
 }
 
 .footer-profit p {
@@ -1154,9 +1189,27 @@ img {
   border-color: var(--write-input-hover);
 }
 
+.write-form__input::-webkit-input-placeholder {
+  color: var(--special-grey);
+  opacity: 0.5;
+}
+
+.write-form__input::-moz-placeholder {
+  color: var(--special-grey);
+  opacity: 0.5;
+}
+
 .write-form__input::placeholder {
   color: var(--special-grey);
   opacity: 0.5;
+}
+
+.write-form__input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.write-form__input:focus::-moz-placeholder {
+  opacity: 1;
 }
 
 .write-form__input:focus::placeholder {
