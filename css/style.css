@@ -362,7 +362,7 @@ img {
 
 .our-projects {
   position: relative;
-  margin-bottom: 119px;
+  margin-bottom: 99px;
 }
 
 .promo {
@@ -534,7 +534,7 @@ img {
 }
 
 .our-projects::after {
-  top: 134px;
+  bottom: -20px;
 }
 
 .our-projects__list {
@@ -543,6 +543,10 @@ img {
   position: relative;
   margin: 0;
   margin-left: 32px;
+}
+
+.our-projects__item {
+  margin-bottom: 20px;
 }
 
 .our-projects__item a {
@@ -557,7 +561,7 @@ img {
   opacity: 0.1;
 }
 
-.our-projects__item:not(:nth-child(4)) {
+.our-projects__item:not(:nth-child(4n)) {
   margin-right: 100px;
 }
 
@@ -876,7 +880,7 @@ img {
 
 .pattern-submenu .limit {
   max-height: 400px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .pattern-link {
