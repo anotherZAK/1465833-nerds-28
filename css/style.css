@@ -867,7 +867,6 @@ img {
 .pattern-submenu {
   position: absolute;
   display: none;
-  padding-bottom: 30px;
   left: 1px;
   bottom: 4px;
   width: 360px;
